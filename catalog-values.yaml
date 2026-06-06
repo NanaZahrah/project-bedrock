@@ -1,0 +1,4 @@
+﻿persistence:
+  provider: mysql
+  mysql:
+    host: project-bedrock-mysql.c6hg62a8e3bk.us-east-1.rds.amazonaws.com

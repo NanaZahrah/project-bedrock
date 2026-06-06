@@ -1,0 +1,4 @@
+﻿persistence:
+  provider: postgres
+  postgres:
+    host: project-bedrock-postgres.c6hg62a8e3bk.us-east-1.rds.amazonaws.com
