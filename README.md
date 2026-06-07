@@ -1,3 +1,4 @@
+<img width="710" height="520" alt="project-bedrock-architecture" src="https://github.com/user-attachments/assets/07638035-0a9a-4a25-87c8-99d55dc26a3d" />
 \# Project Bedrock - InnovateMart EKS Deployment
 
 
@@ -6,7 +7,9 @@
 
 This repository contains the infrastructure and application code for InnovateMart's production-grade microservices deployment on AWS EKS, managed via Terraform and automated via GitHub Actions.
 
-
+> \*\*Project Status: Ephemeral/On-Demand\*\*
+> To optimize cloud resource costs, the Project Bedrock infrastructure is deployed on-demand. The environment is currently \*\*inactive\*\*. 
+> The application can be fully provisioned by running `terraform apply` in the `/infra` directory. Please refer to the \[Deployment Verification](/docs/proof.txt) for logs and output proof of the successful production-grade deployment.
 
 \## Project Architecture
 
