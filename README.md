@@ -1,4 +1,5 @@
 <img width="710" height="520" alt="project-bedrock-architecture" src="https://github.com/user-attachments/assets/07638035-0a9a-4a25-87c8-99d55dc26a3d" />
+
 \# Project Bedrock - InnovateMart EKS Deployment
 
 
