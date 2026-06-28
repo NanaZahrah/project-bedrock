@@ -1,0 +1,28 @@
+namespace: retail-app
+
+ui:
+  image: public.ecr.aws/aws-containers/retail-store-sample-ui:latest
+  replicaCount: 1
+
+catalog:
+  image: public.ecr.aws/aws-containers/retail-store-sample-catalog:0.2.0
+  replicaCount: 1
+  db:
+    endpoint: "mysql:3306"
+    name: "ordersdb"
+    user: "dbadmin"
+    password: "BedrockMySQL2025!"
+
+orders:
+  image: public.ecr.aws/aws-containers/retail-store-sample-orders:0.2.0
+  replicaCount: 1
+  db:
+    url: "jdbc:mysql://mysql:3306/ordersdb?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true"
+    user: "dbadmin"
+    password: "BedrockMySQL2025!"
+
+ingress:
+  enabled: true
+  className: alb
+  scheme: internet-facing
+  targetType: ip
